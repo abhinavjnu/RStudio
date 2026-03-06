@@ -1,0 +1,14 @@
+{
+  "name": "RStudio Codespace",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [8787],
+  "portsAttributes": {
+    "8787": {
+      "label": "RStudio Server",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "postStartCommand": "sudo rstudio-server start"
+}
