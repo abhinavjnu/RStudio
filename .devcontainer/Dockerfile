@@ -1,4 +1,4 @@
-FROM rocker/rstudio:latest
+FROM rocker/rstudio:4.4.2
 
 # Install additional system dependencies useful for R development
 RUN apt-get update && apt-get install -y --no-install-recommends \
